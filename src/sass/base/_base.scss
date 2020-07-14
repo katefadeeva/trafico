@@ -1,0 +1,27 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  @extend %font-add;
+  @include font($size: 1.8rem, $height: 3.0rem);
+  background-color: $color-body;
+}
+
+h1 {
+  @extend %font-prim;
+  @include font($size:10.0rem, $height:10.0rem);
+}
+
+h2 {
+  @include font($size:2.4rem, $height:4.0rem, $weight:bold);
+}
+
+h3 {
+  @include font($size: 1.8rem, $height: 3.0rem, $weight:bold);
+}
+
+.block-shadowed {
+  box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+  border-radius: 10px;
+}

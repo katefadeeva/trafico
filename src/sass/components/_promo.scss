@@ -1,0 +1,25 @@
+.promo__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.promo {
+  padding: 30px 0;
+  margin-bottom: 200px;
+}
+
+.promo__wrapper {
+  padding-bottom: 127px;
+}
+
+.promo__title {
+  color: $color-light;
+  width: 60%;
+}
+
+.promo__bus {
+  position: absolute;
+  left: -15%;
+}

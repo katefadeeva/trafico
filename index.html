@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trafico</title>
-  <link rel="stylesheet" href="#">
+  <link rel="stylesheet" href="./src/sass/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -19,10 +20,10 @@
       </div>
       <nav class="header__navigation header__navigation_closed">
         <ul class="navigation">
-          <li class="navigation__link">ABOUT</li>
-          <li class="navigation__link">HOW TO</li>
+          <li class="navigation__link">About</li>
+          <li class="navigation__link">How to</li>
           <li class="navigation__link">FAQS</li>
-          <li class="navigation__link">CONTACT US</li>
+          <li class="navigation__link"><button class="button button_colored">Contact us</button></li>
         </ul>
       </nav>
     </div>
@@ -34,7 +35,9 @@
         <h1 class="promo__title">Your awesome traffic permit consultant.</h1>
         <div class="promo__button">
           <button class="button button_colored">Get started
-            <span class="ico ico_play"></span>
+            <object data="./src/img/icons/Union.svg" type="image/svg+xml" class="ico ico_right">
+              Your browser does not support SVG
+            </object>
           </button>
         </div>
       </div>
@@ -44,16 +47,192 @@
   <section class="about-us">
     <div class="wrapper about-us__wrapper">
       <div class="about-us__content">
-        <h2 class="about-us__title">ABOUT US</h2>
+        <h2 class="about-us__title">About us</h2>
         <p class="about-us__description">The occupational traffic permit is one of the most important things in the company when carrying out freight transport.  In fact, it is a prerequisite for doing business traffic at all. </p>
         <div class="about-us__question">How do you do when you need to obtain a commercial traffic permit for freight transport to your business?</div>
-      </div> 
+      </div>
+      <img src="./src/img/about-us/Illustration.png" alt="About us" class="about-us__image">
     </div>
-    <img src="./src/img/about-us/Illustration.png" alt="About us" class="about-us__image">
   </section>
-  <section class="apply"></section>
-  <section class="questions"></section>
-  <section class="reviews"></section>
-  <footer class="footer"></footer>
+  <section class="apply">
+    <div class="wrapper apply__wrapper">
+      <img src="./src/img/apply/illustrations.png" alt="How to apply" class="apply__image">
+      <div class="apply__content">
+        <h2 class="apply__title">How to apply</h2>
+        <p class="apply apply_description">When applying for a traffic permit, there are certain requirements that you must meet that are included in the examination: requirements for professional knowledge, solid establishment, good reputation and financial resources. Important to remember is to confirm your application for a traffic permit by the company's company signer or CEO.</p>
+      </div>
+    </div>
+  </section>
+  <section class="questions">
+    <div class="questions__body"></div>
+    <div class="wrapper questions__wrapper">
+      <div class="questions__content">
+        <h2 class="questions__title">FAQ</h2>
+        <p class="questions__description">Questions and Answers on Professional Traffic Permits:</p>
+      </div>
+      <img src="./src/img/faqs/Group%2014.png" alt="FAQS" class="questions__image">
+      <div class="layout-2-column question__container">
+        <article class="question">
+          <h3 class="question__name">What is a professional traffic permit?</h3>
+          <object data="./src/img/icons/Union.svg" type="image/svg+xml" class="ico plus">
+            Your browser does not support SVG
+          </object>
+          <p class="question__answer">Traffic permits are a requirement for conducting professional traffic.</p>
+        </article>
+        <article class="question">
+          <h3 class="question__name">How to check the traffic condition?</h3>
+          <object data="./src/img/icons/Union.svg" type="image/svg+xml" class="ico plus">
+            Your browser does not support SVG
+          </object>
+          <p class="question__answer">Traffic permits are a requirement for conducting professional traffic.</p>
+        </article>
+        <article class="question">
+          <h3 class="question__name">What are the requirements for a professional traffic permit?</h3>
+          <object data="./src/img/icons/+.svg" type="image/svg+xml" class="ico plus">
+            Your browser does not support SVG
+          </object>
+          <p class="question__answer">Traffic permits are a requirement for conducting professional traffic.</p>
+        </article>
+        <article class="question">
+          <h3 class="question__name">Are there professional traffic permit training courses at a distance?</h3>
+          <object data="./src/img/icons/+.svg" type="image/svg+xml" class="ico plus">
+            Your browser does not support SVG
+          </object>
+          <p class="question__answer">Traffic permits are a requirement for conducting professional traffic.</p>
+        </article>
+        <article class="question">
+          <h3 class="question__name">When is a professional traffic permit needed?</h3>
+          <object data="./src/img/icons/+.svg" type="image/svg+xml" class="ico plus">
+            Your browser does not support SVG
+          </object>
+          <p class="question__answer">Traffic permits are a requirement for conducting professional traffic.</p>
+        </article>
+        <article class="question">
+          <h3 class="question__name">Where to look for a traffic permit?</h3>
+          <object data="./src/img/icons/+.svg" type="image/svg+xml" class="ico plus">
+            Your browser does not support SVG
+          </object>
+          <p class="question__answer">Traffic permits are a requirement for conducting professional traffic.</p>
+        </article>
+        <article class="question">
+          <h3 class="question__name">Are there differences between a traffic permit and a professional traffic permit?</h3>
+          <object data="./src/img/icons/+.svg" type="image/svg+xml" class="ico plus">
+            Your browser does not support SVG
+          </object>
+          <p class="question__answer">Traffic permits are a requirement for conducting professional traffic.</p>
+        </article>
+        <article class="question">
+          <h3 class="question__name">How much does a commercial traffic permit cost for goods?</h3>
+          <object data="./src/img/icons/+.svg" type="image/svg+xml" class="ico plus">
+            Your browser does not support SVG
+          </object>
+          <p class="question__answer">Traffic permits are a requirement for conducting professional traffic.</p>
+        </article>
+        <article class="question">
+          <h3 class="question__name">How to plug in for the traffic permit test?</h3>
+          <object data="./src/img/icons/+.svg" type="image/svg+xml" class="ico plus">
+            Your browser does not support SVG
+          </object>
+          <p class="question__answer">Traffic permits are a requirement for conducting professional traffic.</p>
+        </article>
+        <article class="question">
+          <h3 class="question__name">How is the sample for a professional traffic permit booked?</h3>
+          <object data="./src/img/icons/+.svg" type="image/svg+xml" class="ico plus">
+            Your browser does not support SVG
+          </object>
+          <p class="question__answer">Traffic permits are a requirement for conducting professional traffic.</p>
+        </article>
+        <article class="question question_last">
+          <h3 class="question_last-name">Load more</h3>
+          <object data="./src/img/icons/+.svg" type="image/svg+xml" class="ico plus">
+            Your browser does not support SVG
+          </object>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="wrapper reviews__wrapper">
+      <h2 class="reviews__title">About us</h2>
+      <div class="reviews__arrows">
+        <object data="./src/img/icons/Union.svg" type="image/svg+xml" class="ico right">
+          Your browser does not support SVG
+        </object>
+        <object data="./src/img/icons/Union.svg" type="image/svg+xml" class="ico right">
+          Your browser does not support SVG
+        </object>
+      </div>
+      <div class="reviews__content">
+        <p class="reviews__description">Out Awesome Clients</p>
+        <div class="review__container">
+          <div class="review block-shadowed">
+            <p class="review__title">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</p>
+            <div class="review__content">
+              <img src="./src/img/reviews/Reviews1.png" alt="" class="review__photo">
+              <h3 class="review__name">Isak Pettersson</h3>
+            </div>
+          </div>
+          <div class="review block-shadowed">
+            <p class="review__title">From most barricade or traffic control companies located in the phone book. They employ certified Traffic Control Supervisors (TCS) who can generate and certify the traffic control plan. </p>
+            <div class="review__content">
+              <img src="./src/img/reviews/Reviews2.png" alt="" class="review__photo">
+              <h3 class="review__name">Simon Sandberg</h3>
+            </div>
+          </div>
+          <div class="review block-shadowed">
+            <p class="review__title">An A-Line, or access restriction deed is a property right that has been obtained by CDOT for the sole purpose of prohibiting direct.</p>
+            <div class="review__content">
+              <img src="./src/img/reviews/Reviews3.png" alt="" class="review__photo">
+              <h3 class="review__name">Isak Pettersson</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__body">
+      <img src="./src/img/footer/Group%2035.png" alt="Footer Bus" class="footer__bus">
+      <img src="./src/img/footer/Vector%2013.png" alt="Footer Image" class="footer__image">
+    </div>
+    <div class="wrapper footer__wrapper">
+      <div class="layout-2-column footer__content">
+        <div class="footer__description">We provide traffic management consultants so you get started quickly, contact us for a quote today!</div>
+        <div class="footer__form">
+          <form action="" method="post">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name">
+            <label for="email">Email address</label>
+            <input id="email" type="email" placeholder="Your email address">
+            <button class="button button_colored">Get started
+              <object data="./src/img/icons/Union.svg" type="image/svg+xml" class="ico right">
+                Your browser does not support SVG
+              </object>
+            </button>
+          </form>
+        </div>
+      </div>
+      <a href="#" class="logo">
+        <object data="./src/img/logo.svg" type="image/svg+xml" class="logo-object">
+          Your browser does not support SVG
+        </object>
+      </a>
+      <nav class="footer__navigation">
+        <ul class="navigation">
+          <li class="navigation__link">About</li>
+          <li class="navigation__link">How to</li>
+          <li class="navigation__link">FAQS</li>
+        </ul>
+      </nav>
+      <div class="footer__bottom">
+        <p class="copyright">Copyright @ 2019</p>
+        <div class="social-networks">
+          <img src="./src/img/icons/f.png" alt="Facebook">
+          <img src="./src/img/icons/t.png" alt="Twitter">
+          <img src="./src/img/icons/i.png" alt="Instagram">
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

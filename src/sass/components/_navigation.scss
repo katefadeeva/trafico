@@ -1,0 +1,23 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  @include font($size: 1.6rem, $height: 1.9rem, $weight:bold);
+
+}
+
+.navigation__link {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $color-light;
+  list-style: none;
+  padding: 0 30px;
+  cursor: pointer;
+  &:last-child {
+    padding: 0;
+  }
+  &:hover {
+    color: $color-primary;
+  }
+
+}
