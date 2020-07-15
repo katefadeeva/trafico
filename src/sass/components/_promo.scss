@@ -3,23 +3,25 @@
   left: 0;
   top: 0;
   z-index: -1;
+  width: 100%;
 }
 
 .promo {
-  padding: 30px 0;
   margin-bottom: 200px;
 }
 
 .promo__wrapper {
-  padding-bottom: 127px;
+  padding-bottom: 97px;
 }
 
 .promo__title {
   color: $color-light;
   width: 60%;
+  margin-bottom: 45px;
 }
 
 .promo__bus {
   position: absolute;
   left: -15%;
+  width: 50%;
 }

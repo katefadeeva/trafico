@@ -1,9 +1,28 @@
 .apply {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .apply__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @extend %flex-container;
+}
+
+.apply__content {
+  width: 41%;
+  margin-top: -40px;
+}
+
+.apply__title {
+  color: $color-primary;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.apply__description {
+  font-weight: 300;
+}
+
+.apply__image {
+  width: 55%;
+  margin-left: -95px;
 }

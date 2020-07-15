@@ -9,3 +9,9 @@
 %transition {
   transition: all .3s ease-out;
 }
+
+%flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
