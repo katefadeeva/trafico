@@ -1,0 +1,57 @@
+
+.reviews__header {
+  @extend %flex-container;
+  padding-bottom: 40px;
+}
+
+.reviews__title {
+  color: $color-primary;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.reviews__content {
+  @extend %flex-container;
+  align-items: flex-start;
+}
+
+.reviews__description {
+  @extend %font-prim;
+  @include font($size: 4.8rem, $height: 140%);
+  margin: 0;
+  width: 30%;
+}
+
+//  Review
+
+.review__container {
+  position: absolute;
+  @extend %flex-container;
+  right: -330px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $color-light;
+  margin-left: 20px;
+  width: 400px;
+  height: 360px;
+  padding: 40px;
+}
+
+.review__title {
+  @include font($size: 1.6rem, $height: 3.0rem, $weight: 300);
+  padding-bottom: 50px;
+}
+
+.review__content {
+  @extend %flex-container;
+  justify-content: normal;
+}
+
+.review__name {
+  padding-left: 20px;
+}

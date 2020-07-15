@@ -1,0 +1,32 @@
+.form {
+  position: relative;
+  z-index: 1;
+  background-color: $color-light;
+  padding: 20px 50px;
+  margin-top: -100px;
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    padding: 30px 0 10px 0;
+  }
+  input {
+    border: 1px solid rgba(238, 77, 71, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 30px;
+    @include font($size: 1.8rem, $height: 4.0rem, $weight: 300);
+    color: $color-text;
+    &:focus {
+      outline: none;
+      border: 2px solid $color-primary;
+      box-sizing: border-box;
+      box-shadow: 0 20px 40px rgba(238, 77, 71, 0.2);
+      font-weight: bold;
+    }
+  }
+  button {
+    margin: 30px 0;
+  }
+}

@@ -1,0 +1,17 @@
+.bottom {
+  padding: 40px 0;
+}
+
+.bottom__wrapper {
+  @extend %flex-container;
+}
+
+.copyright {
+  @include font($size: 1.6rem, $height: 3.0rem, $weight: 300);
+}
+
+.social-networks {
+  >* {
+    padding-left: 20px;
+  }
+}

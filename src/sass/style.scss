@@ -9,11 +9,13 @@
 @import "base/base";
 @import "base/buttons";
 @import "base/icons";
+@import "base/form";
 
 //Layouts
 @import "layouts/wrapper";
 @import "layouts/header";
 @import "layouts/columns";
+@import "layouts/footer";
 
 //Components
 @import "components/promo";
@@ -21,3 +23,6 @@
 @import "components/about-us";
 @import "components/apply";
 @import "components/questions";
+@import "components/reviews";
+
+@import "components/bottom";

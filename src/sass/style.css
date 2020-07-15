@@ -417,7 +417,7 @@ ul {
   box-sizing: border-box;
 }
 
-.questions__description, h1 {
+.reviews__description, .questions__description, h1 {
   font-family: "DM Serif Display", Verdana, sans-serif;
 }
 
@@ -425,11 +425,11 @@ body {
   font-family: "Rubik", Verdana, sans-serif;
 }
 
-.button {
+.question__answer, .button {
   transition: all 0.3s ease-out;
 }
 
-.question__box, .questions__preview, .apply__wrapper, .about-us__wrapper {
+.bottom__wrapper, .review__content, .review__container, .reviews__content, .reviews__header, .question__box, .questions__preview, .apply__wrapper, .about-us__wrapper, .footer__wrapper, .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -500,12 +500,52 @@ h3 {
   display: inline-block;
 }
 
-.ico_right {
+.ico__right {
   padding-left: 24px;
+}
+
+.ico__left {
+  transform: rotate(180deg);
 }
 
 .plus {
   margin-left: auto;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background-color: #FFFFFF;
+  padding: 20px 50px;
+  margin-top: -100px;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+}
+.form label {
+  padding: 30px 0 10px 0;
+}
+.form input {
+  border: 1px solid rgba(238, 77, 71, 0.5);
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 4rem;
+  color: #402B2B;
+}
+.form input:focus {
+  outline: none;
+  border: 2px solid #EE4D47;
+  box-sizing: border-box;
+  box-shadow: 0 20px 40px rgba(238, 77, 71, 0.2);
+  font-weight: bold;
+}
+.form button {
+  margin: 30px 0;
 }
 
 .wrapper {
@@ -523,12 +563,6 @@ h3 {
   }
 }
 
-.header__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .layout-2-column {
   display: flex;
   flex-wrap: wrap;
@@ -536,6 +570,54 @@ h3 {
 }
 .layout-2-column > * {
   flex-basis: 48%;
+}
+
+.footer {
+  position: relative;
+  background-color: #10274C;
+  margin-top: 550px;
+}
+
+.footer__bus {
+  position: absolute;
+  left: 32px;
+  top: -187px;
+}
+
+.footer__image {
+  position: absolute;
+  left: -216px;
+  z-index: 0;
+}
+
+.footer__content {
+  align-items: center;
+}
+
+.footer__description {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 3rem;
+  color: #FFFFFF;
+  border-left: 10px solid #EE4D47;
+  border-radius: 5px 0 0 5px;
+  align-items: center;
+  padding: 10px 150px 10px 40px;
+}
+
+.footer__wrapper {
+  padding: 100px 0;
+}
+
+.footer__navigation .navigation > * {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 3rem;
+}
+.footer__navigation .navigation > *:last-child {
+  padding-right: 0;
 }
 
 .promo__image {
@@ -660,7 +742,7 @@ h3 {
   background-color: #FDEDE8;
   border-radius: 120px 0 0 0;
   height: 100%;
-  width: 76%;
+  width: 60%;
   right: 0;
 }
 
@@ -694,9 +776,11 @@ h3 {
 .question {
   position: relative;
   z-index: 0;
+  padding-bottom: 10px;
 }
 .question:last-child {
   margin-left: auto;
+  padding: 20px 0 10px 0;
 }
 
 .question__container {
@@ -731,6 +815,85 @@ h3 {
   background-color: #FEF8F5;
   font-weight: 300;
   padding: 40px 35px;
+  border-radius: 0 0 10px 10px;
+  margin-top: -7px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.question__answer_opened {
+  display: block;
+}
+
+.reviews__header {
+  padding-bottom: 40px;
+}
+
+.reviews__title {
+  color: #EE4D47;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.reviews__content {
+  align-items: flex-start;
+}
+
+.reviews__description {
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 140%;
+  margin: 0;
+  width: 30%;
+}
+
+.review__container {
+  position: absolute;
+  right: -330px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  margin-left: 20px;
+  width: 400px;
+  height: 360px;
+  padding: 40px;
+}
+
+.review__title {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 3rem;
+  padding-bottom: 50px;
+}
+
+.review__content {
+  justify-content: normal;
+}
+
+.review__name {
+  padding-left: 20px;
+}
+
+.bottom {
+  padding: 40px 0;
+}
+
+.copyright {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 3rem;
+}
+
+.social-networks > * {
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

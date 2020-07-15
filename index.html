@@ -35,7 +35,7 @@
         <h1 class="promo__title">Your awesome traffic permit consultant.</h1>
         <div class="promo__button">
           <button class="button button_colored">Get started
-            <object data="./src/img/icons/Union.svg" type="image/svg+xml" class="ico ico_right">
+            <object data="./src/img/icons/Union.svg" type="image/svg+xml" class="ico ico__right">
               Your browser does not support SVG
             </object>
           </button>
@@ -74,10 +74,10 @@
         <img src="./src/img/faqs/Group%2014.png" alt="FAQS" class="questions__image">
       </div>
       <div class="layout-2-column question__container">
-        <article class="question question_opened">
+        <article class="question">
           <div class="question__box block-shadowed">
             <h3 class="question__name">What is a professional traffic permit?</h3>
-            <object data="./src/img/icons/-.svg" type="image/svg+xml" class="ico plus">
+            <object data="./src/img/icons/+.svg" type="image/svg+xml" class="ico plus">
               Your browser does not support SVG
             </object>
           </div>
@@ -177,17 +177,19 @@
   </section>
   <section class="reviews">
     <div class="wrapper reviews__wrapper">
-      <h2 class="reviews__title">About us</h2>
-      <div class="reviews__arrows">
-        <object data="./src/img/icons/Union.svg" type="image/svg+xml" class="ico right">
-          Your browser does not support SVG
-        </object>
-        <object data="./src/img/icons/Union.svg" type="image/svg+xml" class="ico right">
-          Your browser does not support SVG
-        </object>
+      <div class="reviews__header">
+        <h2 class="reviews__title">About us</h2>
+        <div class="reviews__arrows">
+          <object data="./src/img/icons/Union.svg" type="image/svg+xml" class="ico ico__left arrow_colored">
+            Your browser does not support SVG
+          </object>
+          <object data="./src/img/icons/Union.svg" type="image/svg+xml" class="ico ico__right arrow_active">
+            Your browser does not support SVG
+          </object>
+        </div>
       </div>
       <div class="reviews__content">
-        <p class="reviews__description">Out Awesome Clients</p>
+        <div class="reviews__description">Out Awesome Clients</div>
         <div class="review__container">
           <div class="review block-shadowed">
             <p class="review__title">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</p>
@@ -219,44 +221,48 @@
       <img src="./src/img/footer/Group%2035.png" alt="Footer Bus" class="footer__bus">
       <img src="./src/img/footer/Vector%2013.png" alt="Footer Image" class="footer__image">
     </div>
-    <div class="wrapper footer__wrapper">
+    <div class="wrapper">
       <div class="layout-2-column footer__content">
         <div class="footer__description">We provide traffic management consultants so you get started quickly, contact us for a quote today!</div>
-        <div class="footer__form">
+        <div class="form block-shadowed">
           <form action="" method="post">
             <label for="name">Name</label>
             <input id="name" type="text" placeholder="Your name">
             <label for="email">Email address</label>
             <input id="email" type="email" placeholder="Your email address">
-            <button class="button button_colored">Get started
-              <object data="./src/img/icons/Union.svg" type="image/svg+xml" class="ico right">
-                Your browser does not support SVG
-              </object>
-            </button>
           </form>
+          <button class="button button_colored">Get started
+            <object data="./src/img/icons/Union.svg" type="image/svg+xml" class="ico right">
+              Your browser does not support SVG
+            </object>
+          </button>
         </div>
       </div>
-      <a href="#" class="logo">
-        <object data="./src/img/logo.svg" type="image/svg+xml" class="logo-object">
-          Your browser does not support SVG
-        </object>
-      </a>
-      <nav class="footer__navigation">
-        <ul class="navigation">
-          <li class="navigation__link">About</li>
-          <li class="navigation__link">How to</li>
-          <li class="navigation__link">FAQS</li>
-        </ul>
-      </nav>
-      <div class="footer__bottom">
-        <p class="copyright">Copyright @ 2019</p>
-        <div class="social-networks">
-          <img src="./src/img/icons/f.png" alt="Facebook">
-          <img src="./src/img/icons/t.png" alt="Twitter">
-          <img src="./src/img/icons/i.png" alt="Instagram">
-        </div>
+      <div class="footer__wrapper">
+        <a href="#" class="logo">
+          <object data="./src/img/logo.svg" type="image/svg+xml" class="logo-object">
+            Your browser does not support SVG
+          </object>
+        </a>
+        <nav class="footer__navigation">
+          <ul class="navigation">
+            <li class="navigation__link">About</li>
+            <li class="navigation__link">How to</li>
+            <li class="navigation__link">FAQS</li>
+          </ul>
+        </nav>
       </div>
     </div>
   </footer>
+  <div class="bottom">
+    <div class="wrapper bottom__wrapper">
+      <p class="copyright">Copyright @ 2020</p>
+      <div class="social-networks">
+        <img src="./src/img/icons/f.png" alt="Facebook">
+        <img src="./src/img/icons/t.png" alt="Twitter">
+        <img src="./src/img/icons/i.png" alt="Instagram">
+      </div>
+    </div>
+  </div>
 </body>
 </html>

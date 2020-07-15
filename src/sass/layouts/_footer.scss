@@ -1,0 +1,47 @@
+.footer {
+  position: relative;
+  background-color: $color-footer;
+  margin-top: 550px;
+}
+
+.footer__bus {
+  position: absolute;
+  left: 32px;
+  top: -187px;
+}
+
+.footer__image {
+  position: absolute;
+  left: -216px;
+  z-index: 0;
+}
+
+.footer__content {
+  align-items: center;
+}
+
+.footer__description {
+  @include font($size: 2.0rem, $height: 3.0rem,);
+  color: $color-light;
+  border-left: 10px solid $color-primary;
+  border-radius: 5px 0 0 5px;
+  align-items: center;
+  padding: 10px 150px 10px 40px;
+}
+
+.footer__wrapper {
+  @extend %flex-container;
+  padding: 100px 0;
+}
+
+.footer__navigation {
+  .navigation {
+    >* {
+      @include font(1.6rem, 3.0rem, 300);
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+  }
+}

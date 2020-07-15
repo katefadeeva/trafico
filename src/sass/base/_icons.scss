@@ -3,8 +3,12 @@
   display: inline-block;
 }
 
-.ico_right {
+.ico__right {
   padding-left: 24px;
+}
+
+.ico__left {
+  transform: rotate(180deg);
 }
 
 .plus {
