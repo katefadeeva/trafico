@@ -1,5 +1,8 @@
 .apply {
   padding-top: 20px;
+  @include media-tablet {
+    padding-top: 80px;
+  }
 }
 
 .apply__wrapper {
@@ -9,6 +12,12 @@
 .apply__content {
   width: 41%;
   margin-top: -40px;
+  @include media-bigtablet {
+    width: 45%;
+  }
+  @include media-tablet {
+    width: 55%;
+  }
 }
 
 .apply__title {
@@ -25,4 +34,7 @@
 .apply__image {
   width: 55%;
   margin-left: -95px;
+  @include media-tablet {
+    width: 53%;
+  }
 }

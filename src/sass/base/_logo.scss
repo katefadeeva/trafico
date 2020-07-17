@@ -1,0 +1,8 @@
+.logo-object {
+  @include media-bigtablet {
+    width: 190px;
+  }
+  @include media-mobile {
+    width: 170px;
+  }
+}

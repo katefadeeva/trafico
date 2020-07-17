@@ -4,6 +4,15 @@
   top: 0;
   z-index: -1;
   width: 100%;
+  @include media-laptop {
+    width: 110%;
+  }
+  @include media-tablet {
+    width: 120%;
+  }
+  @include media-mobile {
+    width: 125%;
+  }
 }
 
 .promo {
@@ -12,12 +21,25 @@
 
 .promo__wrapper {
   padding-bottom: 97px;
+  @include media-tablet {
+    padding-bottom: 85px;
+  }
+  @include media-mobile {
+    padding-bottom: 45px;
+  }
 }
 
 .promo__title {
   color: $color-light;
   width: 60%;
   margin-bottom: 45px;
+  @include media-tablet {
+    width: 70%;
+    margin-bottom: 40px;
+  }
+  @include media-mobile {
+    margin-bottom: 25px;
+  }
 }
 
 .promo__bus {

@@ -5,6 +5,9 @@
 
 .ico__right {
   padding-left: 24px;
+  @include media-mobile {
+    padding-left: 15px;
+  }
 }
 
 .ico__left {

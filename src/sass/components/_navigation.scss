@@ -16,5 +16,13 @@
   &:hover {
     color: $color-primary;
   }
-
+  @include media-laptop {
+    padding: 0 35px;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  @include media-bigtablet {
+    padding: 0 25px;
+  }
 }
