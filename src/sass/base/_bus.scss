@@ -1,0 +1,27 @@
+@keyframes move {
+  from {
+    margin-left: -15%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+@keyframes start {
+  from {
+    margin-left: -50%;
+  }
+  to {
+    margin-left: -15%;
+  }
+}
+
+.bus {
+  margin-left: -15%;
+  width: 50%;
+  animation: start 3s 1 alternate;
+}
+
+.move {
+  animation: move 3s 1 alternate;
+}

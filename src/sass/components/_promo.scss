@@ -15,10 +15,6 @@
   }
 }
 
-.promo {
-  margin-bottom: 200px;
-}
-
 .promo__wrapper {
   padding-bottom: 97px;
   @include media-tablet {
@@ -43,7 +39,7 @@
 }
 
 .promo__bus {
-  position: absolute;
-  left: -15%;
-  width: 50%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }

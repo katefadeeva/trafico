@@ -634,6 +634,32 @@ h3 {
   margin: 30px 0;
 }
 
+@keyframes move {
+  from {
+    margin-left: -15%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+@keyframes start {
+  from {
+    margin-left: -50%;
+  }
+  to {
+    margin-left: -15%;
+  }
+}
+.bus {
+  margin-left: -15%;
+  width: 50%;
+  animation: start 3s 1 alternate;
+}
+
+.move {
+  animation: move 3s 1 alternate;
+}
+
 .hamburger__line, .hamburger:after, .hamburger:before {
   content: "";
   display: inline-block;
@@ -824,10 +850,6 @@ h3 {
   }
 }
 
-.promo {
-  margin-bottom: 200px;
-}
-
 .promo__wrapper {
   padding-bottom: 97px;
 }
@@ -860,9 +882,9 @@ h3 {
 }
 
 .promo__bus {
-  position: absolute;
-  left: -15%;
-  width: 50%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .navigation {
@@ -897,15 +919,6 @@ h3 {
 @media (max-width: 1024px) {
   .navigation__link {
     padding: 0 25px;
-  }
-}
-
-.about-us {
-  padding-top: 135px;
-}
-@media (max-width: 1024px) {
-  .about-us {
-    padding: 0;
   }
 }
 
