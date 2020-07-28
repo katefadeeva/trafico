@@ -23,5 +23,11 @@
 .header__navigation_opened {
   @include media-tablet {
     display: block;
+    position: absolute;
+    background-color: $color-body;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 60%;
   }
 }

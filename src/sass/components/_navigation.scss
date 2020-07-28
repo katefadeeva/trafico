@@ -3,19 +3,26 @@
   align-items: center;
   padding-top: 5px;
   @include font($size: 1.6rem, $height: 1.9rem, $weight:bold);
-
+  @include media-tablet {
+    flex-direction: column;
+    padding-top: 50px;
+  }
 }
 
 .navigation__link {
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: $color-light;
   list-style: none;
   padding: 0 50px;
   cursor: pointer;
-  &:hover {
-    color: $color-primary;
+  a {
+    color: $color-light;
+    text-decoration: none;
+    &:hover {
+      color: $color-primary;
+    }
   }
+
   @include media-laptop {
     padding: 0 35px;
     &:last-child {
@@ -24,5 +31,14 @@
   }
   @include media-bigtablet {
     padding: 0 25px;
+  }
+  @include media-tablet {
+    padding: 0 0 30px 0;
+    a {
+      color: $color-primary;
+      &:hover {
+        color: $color-additional;
+      }
+    }
   }
 }

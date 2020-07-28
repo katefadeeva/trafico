@@ -34,10 +34,21 @@
   &::before {
     transform: rotate(-45deg);
     top: 12px;
+    background-color: $color-primary;
   }
   &::after {
     transform: rotate(45deg);
     top: 12px;
+    background-color: $color-primary;
+  }
+  z-index: 1;
+  &:hover {
+    &::before {
+      background-color: $color-additional;
+    }
+    &::after {
+      background-color: $color-additional;
+    }
   }
 }
 

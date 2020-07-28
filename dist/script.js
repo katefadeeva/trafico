@@ -94,13 +94,9 @@
 /***/ (function(module, exports) {
 
 window.onload = function () {
-  // startMoveCar();
   // Mobile Menu
   openedHamburger();
-}; // const startMoveCar = () {
-//
-// }
-
+};
 
 var moveCar = function moveCar() {
   if (300 <= window.pageYOffset && window.pageYOffset < 600) {
